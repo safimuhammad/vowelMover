@@ -25,7 +25,7 @@ def vowelIdentifier(li=[],a=''):
             for j in fList:
                 if(j == i):
                     index.append(fList.index(j))
-                    print(index)
+                    # print(index)
                     n+=1
                    
     return state,n
@@ -111,7 +111,7 @@ def test3():
     i=0
     
     maxi=len(arr)
-    while i < len(arr):
+    while i < maxi:
         print(i)
         i=i+1
         if(vowelIdentifier(arr,arr[i])[0]==True):
@@ -124,28 +124,73 @@ def test3():
                     arr.pop(i)
                     n+=1
                     vowelDisplaced=n
-                    temp=arr[j]
-                    # print(''.join(arr))
+                    temp=j
+                    print(''.join(arr))
+                    # print(temp,a[0])
                     break
-         
+      
+
+
+                
+    
         if(totalVowels+1==vowelDisplaced):
-                 if(a):
-                    c.replace(' ', '')
-                    # print(arr[a[len(a)-1]],'sgsgs',c[8])
+            # print(arr[temp],vowelDisplaced)
+            maxi=a[0]
+            i=0  
+            print(''.join(arr))
+            # i=0
+            break
+    
             
+# test3()
     
-                 print(''.join(arr))
-                 break
-   
-        # i=0
-
-       
+myList = ['a','b','c']
+for i in range(len(myList)):
+    myTuple = myList[i],myList[(i+1)%len(myList)]
+    print(myTuple)
        
     
 
-test3()
 
 
+# specimen 4
+def test4():
+    test='this is a test'
+    c=test
+    # output = "Thes is i tast!"
+    arr=list(test)
+    n=0
+    vowelDisplaced=0
+    totalVowels=1
+    a=[]
+    temp=''
+    i=0
+    j=i
+    
+    maxi=len(arr)
+    while i < maxi:
+        print(i)
+        i=i+1
+        if(vowelIdentifier(arr,arr[i])[0]==True):
+            a.append(i)
+            print(a)
+            while j <= maxi:
+                if(vowelIdentifier(arr,arr[j+1])[0]==True):
+                    totalVowels=vowelIdentifier(arr,arr[j+1])[1]
+                    arr.insert(j+1, arr[i])
+                    arr.pop(i)
+                    n+=1
+                    vowelDisplaced=n
+                    temp=j+1
+                    print(''.join(arr))
+                    break
+                
+    
+        # if(totalVowels+1==vowelDisplaced):
+        #     print(arr[temp],vowelDisplaced)
+        #     maxi=a[0]
+        #     i=0  
+        #     print(''.join(arr))
 
 
 
