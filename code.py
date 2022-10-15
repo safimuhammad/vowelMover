@@ -138,7 +138,8 @@ def test3():
                     break
                 if(temp == lastVowel):
                     print('working')
-                    for k in test:
+                    # add range to the loop
+                    for k in test:              
                         if(vowelIdentifier(arr,k)[0]==True):
                             arr.insert(arr.index(k),temp)
                             arr.pop(arr.index(temp))
