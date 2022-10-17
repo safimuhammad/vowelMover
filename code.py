@@ -133,7 +133,7 @@ def test3():
                     n+=1
                     vowelDisplaced=n
                     temp=arr[j]
-                    print(''.join(arr))
+                    # print(''.join(arr))
                     # print(temp,a[0])
                     break
                 if(temp == lastVowel):
@@ -141,13 +141,13 @@ def test3():
                     # will fix this tomorrow
                     # add range to the loop
 
-                    for k in test:
-                        print(test,'in k')              
+                    for k in range(0,a[0]):
+                        print(test,a,'in k')              
                         if(vowelIdentifier(arr,k)[0]==True):
-                            print(arr.index(k),'in k 2')
+                            # print(arr.index(k),'in k 2')
                             arr.insert(arr.index(k),temp)
                             arr.pop(arr.index(temp))
-                            print(''.join(arr))
+                            # print(''.join(arr))
                             break
 
                 
