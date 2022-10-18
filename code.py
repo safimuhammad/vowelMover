@@ -149,7 +149,9 @@ def test3():
                             arr.pop(arr.index(temp))
                             # print(''.join(arr))
                             break
+                        
 
+    # checking the whole logic again
                 
 
 
