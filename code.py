@@ -102,6 +102,8 @@ def testIter():
 #     if(n==len(arr)):
 #         break            
 
+
+
 # specimen 3
 def test3():
     test='this is a test'
@@ -153,6 +155,7 @@ def test3():
 
     # checking the whole logic again
     #building new ideas
+    #404
                 
 
 
@@ -163,7 +166,7 @@ def test3():
             # print(arr[temp],vowelDisplaced)
             maxi=a[0]
             i=0  
-            print(''.join(arr),temp)
+            print(''.join(arr))
             # i=0
             break
    
