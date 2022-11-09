@@ -105,6 +105,7 @@ def testIter():
 
 
 # specimen 3
+
 def test3():
     test='this is a test'
     c=test
@@ -156,11 +157,7 @@ def test3():
     # checking the whole logic again
     #building new ideas
     #404
-                
-
-
-                
-    
+    #test commit
         if(totalVowels==vowelDisplaced):
             print('working2')
             # print(arr[temp],vowelDisplaced)
